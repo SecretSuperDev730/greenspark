@@ -29,10 +29,6 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
-import { logEvent } from 'histoire/client'
 import Tooltip from './index.vue'
 import InfoCircleIcon from '@/icons/InfoCircle/index.vue'
-
-const checked = ref(false)
 </script>

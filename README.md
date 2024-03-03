@@ -1,25 +1,14 @@
-# greenspark
+# Greenspark
 
-This template should help get you started developing with Vue 3 in Vite.
 
-## Recommended IDE Setup
+## Technical stacks
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- Vue 3 + Typescript
+- Pinia (store)
+- Tailwind css
+- Histoire (storybook)
+- Vitest (unit test)
 
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 ## Project Setup
 
@@ -50,3 +39,52 @@ npm run test:unit
 ```sh
 npm run lint
 ```
+
+### Run storybook
+
+```sh
+npm run story:dev
+```
+
+### Build storybook
+
+```sh
+npm run story:build
+```
+
+
+## Implementation
+I implemented this project with Vue 3 + typescript.
+I didn't use router for this project as this is one page test app.
+
+I used only tailwind css, but no other libraries for UI and I built common components from scratch.
+I implemented pixel perfect and fully mobile responsive.
+
+I used pinia for store management.
+I didn't use store in basic components because they are common components which should be reusable and scalable.
+
+I implemented unit test with vitest.
+Also, I implemented storybook with pinia.
+
+I've chosen the latest, modern & popular frameworks and libraries.
+
+### Project structure
+- assets (styles)
+- components (basic components)
+- icons (svg icons)
+- resources (constants and interfaces)
+- services (API calls)
+- stores (pinia stores)
+- App.vue
+- main.ts
+- index.html
+
+### Components
+#### Atoms
+- Checkbox
+- ColorSelect
+- Logo
+- Switch
+- Tooltip
+#### Molecules
+- ProductWidget

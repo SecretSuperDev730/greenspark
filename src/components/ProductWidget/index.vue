@@ -14,7 +14,7 @@
     <div class="flex items-center justify-between gap-4">
       <div class="flex items-start gap-0.5">
         <span>Link to Public Profile</span>
-        <Tooltip title="This is tooltip!">
+        <Tooltip title="This is tooltip!" :disabled="!widget.linked">
           <InfoCircleIcon class="-mt-0.5 w-3 text-primary" />
           <template #tooltip>
             <div class="flex flex-col items-center gap-3 py-4 text-center">
