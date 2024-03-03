@@ -17,9 +17,9 @@
     "story:preview": "histoire preview"
   },
   "dependencies": {
+    "axios": "^1.6.7",
     "pinia": "^2.1.7",
-    "vue": "^3.4.15",
-    "vue-router": "^4.2.5"
+    "vue": "^3.4.15"
   },
   "devDependencies": {
     "@histoire/plugin-vue": "^0.17.12",

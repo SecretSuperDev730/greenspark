@@ -1,0 +1,21 @@
+@layer base {
+
+  h3, .typo-h3 {
+    @apply text-[30px] leading-[36px] font-bold;
+  }
+
+  .typo-lg {
+    @apply text-[17.86px] leading-[21.71px];
+  }
+  .typo-sm {
+    @apply text-[14px] leading-[17px];
+  }
+  .typo-xs {
+    @apply text-[12.41px] leading-[15.07px];
+  }
+
+  .typo-link {
+    @apply text-[14px] leading-[17px] font-bold hover:underline cursor-pointer;
+    letter-spacing: -0.28px;
+  }
+}
