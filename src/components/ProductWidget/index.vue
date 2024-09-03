@@ -1,7 +1,7 @@
 <template>
   <div class="typo-sm flex flex-col gap-2.5">
     <div
-      class="flex items-center gap-3 rounded-md p-3"
+      class="flex items-center gap-3 rounded-md p-3 transition-all"
       :style="{ background: theme.color, color: theme.text }"
     >
       <Logo :width="40" />
@@ -15,7 +15,9 @@
       <div class="flex items-start gap-0.5">
         <span>Link to Public Profile</span>
         <Tooltip title="This is tooltip!" :disabled="!widget.linked">
-          <InfoCircleIcon class="-mt-0.5 w-3 text-primary" />
+          <InfoCircleIcon
+            :class="['-mt-0.5 w-3 transition-all', widget.linked ? 'text-primary' : 'text-gray']"
+          />
           <template #tooltip>
             <div class="flex flex-col items-center gap-3 py-4 text-center">
               <p>
